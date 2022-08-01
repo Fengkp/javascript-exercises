@@ -4,13 +4,12 @@ const palindromes = function (text) {
     let textLength = text.length - 1;
     let isPalindrome = false;
 
-    for (let i = 0; i != textLength; i++) {
+    for (let i = 0; i < Math.floor(textLength / 2); i++) {
         if (text[i] !== text[textLength--])
             return false;
         isPalindrome = true;
     }
     return isPalindrome;
-
 };
 
 // Do not edit below this line
