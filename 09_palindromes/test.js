@@ -1,4 +1,4 @@
-const palindromes = function (text) {
+function test(text) {
     text = text.replace(/[\s.,!?'":;/,]/g, "");
     text = text.toLowerCase();
     let textLength = text.length - 1;
@@ -13,5 +13,4 @@ const palindromes = function (text) {
 
 };
 
-// Do not edit below this line
-module.exports = palindromes;
+test('A car, a man, a maraca.');
